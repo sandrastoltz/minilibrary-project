@@ -1,0 +1,224 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Root */
+:root {
+    --font-color-white: rgb(255, 255, 255);
+    --font-color-black: rgb(0, 0, 0);
+    --Roboto: 'Roboto', sans-serif; 
+}
+
+/* All */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    position: relative;
+    max-width: 90rem;
+    height: 56.25rem;
+}
+
+/* Main */
+h1 {
+    width: 53rem;
+    height: 10rem; 
+    font-family: var(--Roboto);
+    font-size: 2.875rem;
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+    align-items: flex-end;
+    color: var(--font-color-black);
+}
+
+#book-container {
+    position: relative;
+    width: 53rem;
+    height: 31rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: auto;
+}
+
+/* Buttons */
+#book-container > * {
+    width: 12.5rem;
+    height: 15rem;
+    border-radius: 0.125rem;
+    background: linear-gradient(208deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 92.13%);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+#book-container button {
+    border: none;
+    position: relative;
+}
+
+.book_title, .book_author {
+    display: flex;
+    width: 9.9375rem; 
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    text-align: start;
+    padding-left: 0.94rem;
+    margin-left: 0.5rem;
+    border-left: solid rgba(34, 34, 34, 0.449) 0.15rem;
+}
+
+.book_title {
+    color: var(--font-color-white);
+    font-family: var(--Roboto);
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: normal;
+    height: 14rem; 
+    padding-bottom: 1rem;
+}
+
+.book_author {
+    color: var(--font-color-white);
+    font-family: var(--Roboto);
+    font-size: 0.625rem;
+    height: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Info */
+#info-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90rem;
+    height: 56.25rem;
+    z-index: 1;
+    background-color: rgba(34, 34, 34);
+}
+
+#back-btn {
+    border-radius: 50%;
+    border: none;
+    background: none;
+    width: 50.5rem;
+    display: flex;
+    margin: 8.5rem auto 2.75rem auto;
+}
+
+.main_info_box {
+    display: flex;
+    justify-content: space-between;
+    width: 50.5rem;
+    height: 29rem;
+    margin: auto;
+}
+
+/* Info book */
+#book {
+    width: 24.32256rem;
+    height: 29rem;
+    border-radius: 0.125rem;
+    background: linear-gradient(208deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 92.13%);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.info_title_book, .info_author_book {
+    display: flex;
+    width: 21rem; 
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    text-align: start;
+    padding-left: 1.82rem;
+    margin-left: 0.99rem;
+    border-left: solid rgba(34, 34, 34, 0.449) 0.2rem;
+}
+
+.info_title_book {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: var(--Roboto);
+    font-size: 2.375rem;
+    font-weight: 700;
+    height: 25.5rem;
+}
+
+.info_author_book {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: var(--Roboto);
+    font-size: 1.125rem;
+    padding-top: 0.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Info page */
+#info-div {
+    display: flex;
+    flex-direction: column;
+    height: 29rem;
+    width: 24rem;
+    margin: 0;
+}
+
+.info_book_title {
+    width: 24rem;
+    color: var(--font-color-white);
+    font-family: var(--Roboto);
+    font-size: 2.375rem;
+}
+
+.info_book_author {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: var(--Roboto);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.info_book_plot {
+    width: 24rem;
+    height: 13.75rem;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: var(--Roboto);
+    font-size: 0.875rem;
+    line-height: 150%;
+    margin-top: 1.25rem;
+    overflow-y: auto;
+}
+
+.info_div_box {
+    display: flex;
+    width: 24.125rem;
+    height: 4.375rem;
+    padding-left: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.87rem;
+    background: rgba(196, 196, 196, 0.08);
+}
+
+.info_div_box section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_div_box section > * {
+    width: 10.9375rem;
+    height: 1.125rem;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: var(--Roboto);
+    font-size: 0.875rem;
+    font-weight: 700; 
+    line-height: 150%;
+}
+
+/* Extra */
+.hide {
+    display: none;
+}
